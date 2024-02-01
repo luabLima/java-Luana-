@@ -1,15 +1,15 @@
 public class Main {
 // Definindo a classe "Carro"
-class Carro {
+static class Carro { //colocar o static
     // Atributos da classe
     private String marca; // Atributo privado para encapsulamento
     private String modelo;
-    private int anoDeFabricao;
+    private int anoDeFabricacao;
     private String cor;
     private int velocidadeAtual;  // Atributo privado para encapsulamento
     
     // Método construtor da classe para inicializar os atributos
-    Pessoa(String marca, String modelo, int anoDeFabricacao, String cor, int velocidadeAtual) {
+    Carro(String marca, String modelo, int anoDeFabricacao, String cor, int velocidadeAtual) {
         this.marca = marca;
         this.modelo = modelo;
         this.anoDeFabricacao = anoDeFabricacao;
@@ -41,10 +41,10 @@ class Carro {
 }
 
 // Classe principal que contém o método main
-public class Main {
+//public class Main { //não tem aqui so la em cima 
     public static void main(String[] args) {
         // Criando um objeto da classe Pessoa chamado "pessoa1"
-        Carro carro1 = new Carro("Ferrari", GTR, 1990, vermelho, 40);
+        Carro carro1 = new Carro("Ferrari", "GTR", 1990, "vermelho", 40); //aspas tudo que for STRING
         
         // Usando os métodos getters para obter e imprimir as informações da pessoa
         System.out.println("Marca: " + carro1.getMarca()); // Obtém e imprime a marca do carro
@@ -53,5 +53,4 @@ public class Main {
         System.out.println("Cor: " + carro1.getCor()); // Obtém e imprime a cor do carro
         System.out.println("VelocidadeAtual: " + carro1.getVelocidadeAtual()); // Obtém e imprime a velocidade atual do carro
     }
-}
 }
