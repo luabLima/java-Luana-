@@ -1,12 +1,11 @@
 import java.util.Scanner;
 
 class Numero {
-    // Método para verificar se o número é ímpar
+   
     public static boolean eImpar(int n) {
         return n % 2 != 0;
     }
 
-    // Método para verificar se o número é positivo
     public static boolean ePositivo(int n) {
         return n > 0;
     }
